@@ -1,0 +1,24 @@
+.all-section-line-container{
+    .section-line{
+        width: 2px;
+        height: 690px;
+        left: 310px;
+        top: 155px;
+        background-color: gray;
+        position: absolute;    
+    }
+    .section-line-item{
+        width: 90px;
+        color: white;
+        margin-top: 115px;
+        margin-left: 279px;
+        .svg-section-line{
+            z-index: 10;
+            padding-left: 10px;
+            position: relative;
+        }
+        
+    }
+}
+
+
