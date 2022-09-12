@@ -1,0 +1,95 @@
+.all-contact-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 950px;
+    height: 800px;
+    .contact-title{
+        color: var(--color-3);
+        font-size: 45px;
+        position: relative;
+        top: -10px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 320px;
+        .contact-form-input-container{
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            .contact-label{
+                color: var(--color-2);
+                position: absolute;
+                // &:focus{
+                //     transform: translate(.25rem, -65%) scale(.8);
+                //     color: var(--color-3)
+                // }
+            }
+            .contact-form-input{
+                display: block;
+                height: 100%;
+                width: 100%;
+                border: none;
+                font-size: 17px;
+                background: #09141f;
+                border-bottom: 2px solid rgb(255,255,255);
+                color: white;
+                outline: none;
+                // &:focus{
+                //     &:not(:placeholder-shown){
+                //         +.contact-label {
+                //             transform: translate(.25rem, -65%) scale(.8);
+                //             color: var(--color-3)
+                //         }
+                //     }   
+                // }
+                &::placeholder{
+                    color: transparent;
+                }
+                &:placeholder-shown ~ .contact-form-input {
+                    font-size: 1.3rem;
+                    cursor: text;
+                    top: 20px;
+                  }
+            }
+            .contact-form-input:focus{
+                ~ .contact-label{
+                    position: relative;
+                    top: -60px;
+                    display: flex;
+                    transition: 0.2s;
+                    font-size: 1rem;
+                    color: var(--color-3);
+                }
+            }
+        }
+        .contact-textarea-btn-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-left: 30px;
+            .contact-text-area{
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid rgb(255,255,255);
+                resize: none;
+                height: 30px;
+                font-size: 18px;
+                color: white;
+            }
+            .text-area-label{
+                color: var(--color-2);
+                position: absolute;
+                bottom: 217px;
+                left: 781px;
+            }
+            .contact-submit-btn{
+                position: absolute;
+                bottom: 130px;
+            }
+        }
+    }
+}

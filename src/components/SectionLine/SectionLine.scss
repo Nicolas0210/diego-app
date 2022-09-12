@@ -8,14 +8,19 @@
         position: absolute;    
     }
     .section-line-item{
-        width: 90px;
+        width: fit-content;
         color: white;
-        margin-top: 115px;
-        margin-left: 279px;
+        margin-top: 103px;
+        margin-left: 283px;
+        cursor: pointer;
         .svg-section-line{
             z-index: 10;
             padding-left: 10px;
             position: relative;
+            .little-line-svg{
+                stroke: var(--color-3);
+                stroke-width: 7px
+            }
         }
         
     }

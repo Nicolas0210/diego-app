@@ -5,8 +5,9 @@
         background-color: var(--color-1);
         justify-content: space-between;
         >svg {
-            width: 90px;
+            width: 110px;
             margin-left: 265px;
+            margin-top: 12px;
         }
         .navBar-menu-btn{
             width: 45px;
@@ -33,6 +34,8 @@
                 padding: 10px;
                 margin-right: -41px;
                 color: white;
+                border-color: #f55726;
+                border-width: 1px;
             }
             &.hidden {
                 display: none;
